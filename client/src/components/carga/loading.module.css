@@ -1,0 +1,40 @@
+.containImg {
+    height: 12rem;
+    width: 12rem;
+    animation: load 10s linear;
+    position: relative;
+}
+
+@keyframes load {
+    0% { left: -40rem; }
+    35% { left: -20rem; }
+    50% { left: -30rem; }
+    100% { left: 0; }
+}
+
+.containImg img {
+    position: fixed;
+    left: 7rem;
+    bottom: -2rem;
+    height: 16rem;
+    width: 16rem;
+}
+
+.containImg h1 {
+    font-family: pokeSolid;
+    text-shadow: 3px 0px 0px var(--blue), 0px 3px 0px var(--blue), -3px 0px 0px var(--blue), 0px -3px 0px var(--blue);
+    color: var(--yellow);
+    letter-spacing: 4px;
+    margin: 2rem auto;
+}
+
+.containImg h1::after {
+    content: "";
+    animation: dots infinite 5s
+}
+
+@keyframes dots {
+    0% { content: "."; }
+    50% { content: ".."; }
+    100% { content: "..."; }
+}

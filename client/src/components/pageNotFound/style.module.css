@@ -1,0 +1,9 @@
+.btn{
+    border-radius: 30%;
+    border-color: rgb(70, 62, 62);
+}
+
+.btn:hover{
+    background-color: aqua;
+    transition: background-color 0.5s;
+}
